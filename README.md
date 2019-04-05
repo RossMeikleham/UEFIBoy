@@ -9,6 +9,14 @@ UEFI Subtree/Fork of [Plutoboy](https://github.com/RossMeikleham/PlutoBoy)
 
  ![example](/images/uefi_test.gif)
 
+# Controls (directional keys map across)
+- a -> a
+- s -> b
+- enter -> start
+- space -> select
+- 1 -> decrease screen size
+- 2 -> increase screen size (cpu scaling, slows down gameplay)
+
 
 # Building
 
