@@ -4,7 +4,7 @@
 Gameboy/Gameboy Color emulator.   
 UEFI Subtree/Fork of [Plutoboy](https://github.com/RossMeikleham/PlutoBoy)
 
- ![uefiIcon](/images/uefi.png?raw=true) ![BuildStatus](https://travis-ci.org/RossMeikleham/UefiBoy.svg?branch=master)
+ ![uefiIcon](/images/uefi.png?raw=true) ![BuildStatus](https://travis-ci.org/RossMeikleham/UEFIBoy.svg?branch=master?branch=master)
 
 
  ![example](/images/uefi_test.gif)
