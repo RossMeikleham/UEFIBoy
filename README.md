@@ -16,6 +16,7 @@ UEFI Subtree/Fork of [Plutoboy](https://github.com/RossMeikleham/PlutoBoy)
 - space -> select
 - 1 -> decrease screen size
 - 2 -> increase screen size (cpu scaling, slows down gameplay)
+- esc -> exit
 
 
 # Building
