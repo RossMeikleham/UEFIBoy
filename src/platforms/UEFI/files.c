@@ -26,10 +26,11 @@ unsigned long load_rom_from_file(const char *file_path, unsigned char *data) {
     }
 
     uint32_t count = 0; 
-    unsigned char cur;
+    size_t read = 0; 
     //Read file contents into buffer
-    while(count < MAX_FILE_SIZE && uefi_fread(&cur, 1, 1, file)) {
-        data[count++] = cur;
+    while(count < MAX_FILE_SIZE && (read = uefi_fread(data, 1, 4096, file)) > 0) {
+        count += read;
+        data += read;
     }
 
     if (count == 0) {

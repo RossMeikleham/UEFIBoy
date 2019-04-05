@@ -13,6 +13,9 @@
 #include <Library/UefiRuntimeLib.h>
 #include <Protocol/SimpleTextIn.h>
 
+int scale = 1;
+int full_size = 0;
+
 typedef struct {
 	int scan_code;
     int key_code; // Key code on the keyboard which
@@ -115,6 +118,22 @@ int update_keys() {
 		{
 			break;
 		}
+
+        // Quit
+        if (inputKey.ScanCode == SCAN_ESC) {
+            return 1; 
+        }
+
+        if (inputKey.UnicodeChar == L'2') {
+            scale++;
+        }
+
+        if (inputKey.UnicodeChar == L'1') {
+            scale--;
+            if (scale < 1) {
+                scale = 1;
+            } 
+        }
 	
 		for (size_t i = 0; i < TOTAL_BUTTONS; i++) {
         	if (buttons[i].scan_code == inputKey.ScanCode) {

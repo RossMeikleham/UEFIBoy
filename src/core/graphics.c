@@ -67,11 +67,7 @@ static uint32_t cgb_color_to_rgb(uint16_t c) {
     uint8_t green = (((c >> 5) & 0x1F) * 255) / 31;  
     uint8_t blue =  (((c >> 10) & 0x1F)* 255) / 31; 
 
-<<<<<<< HEAD
-   return (0xFF << 24) | (red << 16) | (green << 8) | (blue << 0); 
-=======
    return 0xFF000000 | (red << 16) | (green << 8) | (blue << 0);
->>>>>>> 013fcf4bf1edb4e97ee4496f258e46a7aed91c99
 }
 
 static void refresh_gbc_bg_palettes() {

@@ -71,13 +71,10 @@ void write_MBC1(uint16_t addr, uint8_t val) {
                     if (battery && ram_banking && ((val & 0xF) != 0xA)) {
                         write_SRAM();
                     }
-<<<<<<< HEAD
-                    ram_banking = ((val & 0xF) == 0xA);
-=======
+                    
                     if (RAM_bank_count > 0) {
                         ram_banking = ((val & 0xF) == 0xA);
-		    }
->>>>>>> 013fcf4bf1edb4e97ee4496f258e46a7aed91c99
+		            }
                     break;
         case 0x2000:
         case 0x3000:/* Set ROM bank, if result is 0, 0x20, 0x40, 0x60
