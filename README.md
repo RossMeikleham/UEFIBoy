@@ -71,7 +71,7 @@ information on running QEMU with OVMF.
 
 
 # Credits 
-UEFI documentation is awful and examples are difficult to find, porting my emulator TO UEFI would be impossible without these sources:
+UEFI documentation is awful and examples are difficult to find, porting my emulator to UEFI would be impossible without these sources:
 - https://github.com/warfish/DOOM (DOOM UEFI port)
 - http://wiki.phoenix.com/wiki/index.php/UEFI (Use wayback machine for links that work)
 - https://github.com/tianocore/edk2 (Source code for UEFI)
