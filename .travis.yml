@@ -1,0 +1,16 @@
+
+matrix:
+  include:
+    - os: linux
+      env: DOCKER=YES build=uefi BUILD_FOLDER=build/UEFI
+      language: ruby
+      services:
+        - docker
+ 
+install:
+    # Docker build setup  
+    - if [ "$DOCKER" == "YES" ]; then docker build -t plutoboy -f $BUILD_FOLDER/Dockerfile .; fi 
+
+script: 
+    # Docker linux build
+    - if [ "$BUILD" == "linux" ]; then docker run -e cc=$CC -e framework=$FRAMEWORK -e mode=$MODE plutoboy; fi
