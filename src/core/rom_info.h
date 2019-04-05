@@ -64,8 +64,11 @@ uint16_t get_rom_size();
 const char *get_cartridge_type();
 
 
+<<<<<<< HEAD
 uint8_t id_to_ram_save_size(uint8_t);
 
+=======
+>>>>>>> 013fcf4bf1edb4e97ee4496f258e46a7aed91c99
 /*  Returns ram save size in KB, returns 255
  *  if unknown id currently in memory */
 uint8_t get_ram_save_size();

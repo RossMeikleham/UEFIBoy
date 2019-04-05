@@ -30,7 +30,11 @@
 #endif
 
   
+<<<<<<< HEAD
 static uint8_t mem[0xDFFF - 0x8000];
+=======
+static uint8_t mem[0xE000 - 0x8000];
+>>>>>>> 013fcf4bf1edb4e97ee4496f258e46a7aed91c99
 
 uint8_t *oam_mem_ptr;
 
