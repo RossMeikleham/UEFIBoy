@@ -68,3 +68,10 @@ information on running QEMU with OVMF.
 - Vendors may implement UEFI differently, so this may not work.
 - Follow "Running (QEMU)" but place files on a  FAT32 formatted drive/usb stick/bootable device instead of "hda-contents"
 - From the machine set to booting/running from the FAT32 drive (this is different for most machines)
+
+
+# Credits 
+UEFI documentation is awful and examples are difficult to find, porting my emulator TO UEFI would be impossible without these sources:
+- https://github.com/warfish/DOOM (DOOM UEFI port)
+- http://wiki.phoenix.com/wiki/index.php/UEFI (Use wayback machine for links that work)
+- https://github.com/tianocore/edk2 (Source code for UEFI)
